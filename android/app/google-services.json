@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529878231509",
+    "project_id": "autosender-333418",
+    "storage_bucket": "autosender-333418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529878231509:android:fa59276936fbd84df9b55c",
+        "android_client_info": {
+          "package_name": "com.autosendermichaelyoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529878231509-70788916f4a1jst7uvvadh01kk9saepf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtBDKypHbbcbCcNyyflZY1zINMVMV_iTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529878231509-70788916f4a1jst7uvvadh01kk9saepf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

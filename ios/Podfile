@@ -1,0 +1,68 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '11.0'
+
+target 'VoiceChanger' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
+
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNDateTimePicker', :path => '../node_modules/@react-native-community/datetimepicker'
+
+  pod 'react-native-contacts', :path => '../node_modules/react-native-contacts'
+
+  pod 'react-native-background-timer', :path => '../node_modules/react-native-background-timer'
+
+  pod 'react-native-location', :path => '../node_modules/react-native-location'
+
+  pod 'react-native-background-actions', :path => '../node_modules/react-native-background-actions'
+
+  pod 'RNBackgroundGeolocation', :path => '../node_modules/react-native-background-geolocation'
+
+  pod 'react-native-geolocation-service', :path => '../node_modules/react-native-geolocation-service'
+
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+
+  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+
+  pod 'RNCPicker', :path => '../node_modules/@react-native-picker/picker'
+
+  pod 'RNSnackbar', :path => '../node_modules/react-native-snackbar'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  target 'VoiceChangerTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!()
+
+  post_install do |installer|
+    react_native_post_install(installer)
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end

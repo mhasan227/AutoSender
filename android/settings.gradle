@@ -1,0 +1,66 @@
+rootProject.name = 'NewVoiceChanger'
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+include ':react-native-video'
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
+include ':react-native-snackbar'
+project(':react-native-snackbar').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-snackbar/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':@react-native-picker_picker'
+project(':@react-native-picker_picker').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-picker/picker/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':@react-native-firebase_app'
+project(':@react-native-firebase_app').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/app/android')
+include ':@react-native-firebase_auth'
+project(':@react-native-firebase_auth').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/auth/android')
+include ':react-native-location'
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':@voximplant_react-native-foreground-service'
+project(':@voximplant_react-native-foreground-service').projectDir = new File(rootProject.projectDir, '../node_modules/@voximplant/react-native-foreground-service/android')
+include ':@supersami_rn-foreground-service'
+project(':@supersami_rn-foreground-service').projectDir = new File(rootProject.projectDir, '../node_modules/@supersami/rn-foreground-service/android')
+
+include ':@voximplant_react-native-foreground-service'
+project(':@voximplant_react-native-foreground-service').projectDir = new File(rootProject.projectDir, '../node_modules/@voximplant/react-native-foreground-service/android')
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
+include ':react-native-geolocation-service'
+project(':react-native-geolocation-service').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geolocation-service/android')
+include ':react-native-background-geolocation'
+project(':react-native-background-geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-geolocation/android')
+include ':react-native-background-geolocation'
+project(':react-native-background-geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-geolocation/android')
+include ':react-native-background-actions'
+project(':react-native-background-actions').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-actions/android')
+include ':react-native-location'
+include ':@voximplant_react-native-foreground-service'
+project(':@voximplant_react-native-foreground-service').projectDir = new File(rootProject.projectDir, '../node_modules/@voximplant/react-native-foreground-service/android')
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':react-native-location'
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':react-native-location'
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':react-native-background-timer'
+project(':react-native-background-timer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-timer/android')
+include ':react-native-contacts'
+project(':react-native-contacts').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-contacts/android')
+include ':@react-native-community_datetimepicker'
+project(':@react-native-community_datetimepicker').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/datetimepicker/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+include ':react-native-screens'
+project(':react-native-screens').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-screens/android')
+include ':@react-native-async-storage_async-storage'
+project(':@react-native-async-storage_async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-async-storage/async-storage/android')
+include ':react-native-safe-area-context'
+include ':react-native-background-timer'
+project(':react-native-background-timer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-timer/android')
+project(':react-native-safe-area-context').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-safe-area-context/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
